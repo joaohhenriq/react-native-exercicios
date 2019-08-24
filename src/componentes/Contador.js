@@ -7,6 +7,12 @@ export default class Contador extends Component {
         numero: this.props.numeroInicial
     }
 
+    // constructor(props){
+    //     super(props)
+
+
+    // }
+
     render(){
         return (
             <View>
