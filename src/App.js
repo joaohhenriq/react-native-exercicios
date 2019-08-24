@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
 import {View, Text, StyleSheet} from 'react-native'
+import Simples from './componentes/Simples'
+import ParImpar from './componentes/ParImpar'
 
 export default class App extends Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.f20}>App!</Text> 
+        <Simples style={styles.simples} texto="Teste Teste"/>
+        <ParImpar numero={31} />
       </View>
     )
   }
@@ -17,7 +20,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  f20: {
-    fontSize: 20
-  }
 })
